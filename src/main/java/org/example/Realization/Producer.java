@@ -29,7 +29,7 @@ public class Producer implements Runnable {
                 Client client = generateClient();
                 DataCashQueue chosenCashRegister = supermarket.getMinQueueCashRegister();
                 chosenCashRegister.addToQueue(client);
-                System.out.println("New client arrived and joined queue at CashRegister " + chosenCashRegister.getId());
+                System.out.println("Новый клиент вошёл и присоединился к кассе под номером: " + chosenCashRegister.getId());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

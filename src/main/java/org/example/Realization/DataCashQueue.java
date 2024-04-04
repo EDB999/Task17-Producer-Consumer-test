@@ -21,14 +21,14 @@ public class DataCashQueue {
     }
 
     public synchronized void serviceClient(Client client) throws InterruptedException {
-        System.out.println("CashRegister " + id + " starts servicing client: " + client);
+        System.out.println("Касса под номером: " + id + " Начало обслуживания клиента: " + client);
         Thread.sleep(serviceTime);
-        System.out.println("CashRegister " + id + " finished servicing client: " + client);
+        System.out.println("Касса под номером: " + id + " Конец обслуживания клиента: " + client);
     }
 
     public synchronized void addToQueue(Client client) {
         queue.add(client);
-        System.out.println("Client " + client.getId() + " joined the queue at CashRegister " + id);
+        System.out.println("Клиент: " + client.getId() + " присоединился к очереди кассы под номером: " + id);
     }
 
     public synchronized Client getNextClient() {
