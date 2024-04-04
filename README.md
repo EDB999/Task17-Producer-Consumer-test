@@ -1,1 +1,1 @@
-# Task17-Producer-Consumer-test
+# !!! САМ ПРОЕКТ ЛЕЖИТ НА ВТОРОЙ ВЕТКЕ - MASTER !!!
